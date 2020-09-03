@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@color/colorPrimaryDark"
+    tools:context=".SearchResultsActivity">
+
+
+    <TextView
+        android:id="@+id/text_view_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="hello"
+        android:textColor="#fff"
+        android:layout_margin="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+        <RelativeLayout
+            android:id="@+id/relat1"
+            android:layout_width="370dp"
+            android:layout_height="370dp"
+            android:background="#fff"
+            android:gravity="center">
+            <WebView
+                android:id="@+id/web_view_search"
+                android:layout_width="360dp"
+                android:layout_height="360dp"
+                android:background="#fff"
+                android:cropToPadding="true"
+                android:padding="3dp"
+                android:scaleType="centerCrop" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</RelativeLayout>
